@@ -123,7 +123,7 @@ public class GameActivity extends AppCompatActivity {
 
         // set the text field
         // TODO: use placeholders!
-        SCORE_TXT_VIEW.setText(getString(R.string.game_score_pre) + " " + 0);
+        SCORE_TXT_VIEW.setText("to start the game, tap the START button");
     }
 
     // PUBLIC METHODS
@@ -156,7 +156,7 @@ public class GameActivity extends AppCompatActivity {
 
     // PRIVATE METHODS
 
-    // sets up the game
+    // sets up the game, and begins the runnables
     // mainly starts the runnables
     private void setupGame(Context ctx) {
         // start the runnables
@@ -169,6 +169,8 @@ public class GameActivity extends AppCompatActivity {
 
         // swap the start button text
         GAME_START_BUTTON.setText("retry");
+
+        SCORE_TXT_VIEW.setText("your score is 0");
 
         // set score to zero
         GAME_SCORE = 0;
@@ -203,6 +205,8 @@ public class GameActivity extends AppCompatActivity {
     private void clearGame(Context ctx) {
         // remove all buttons
         GAME_LAYOUT.removeAllViewsInLayout();
+
+        SCORE_TXT_VIEW.setText("to start the game, tap the START button");
     }
 
     // generates a random button with a random color and random size

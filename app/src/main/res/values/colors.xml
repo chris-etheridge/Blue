@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5383C6</color>
+    <color name="colorPrimaryDark">#5383C6</color>
+    <color name="colorAccent">#FEE18B</color>
+    <!-- custom theme colors -->
+    <color name="themePrimary">#5383c6</color>
+    <color name="themeGray">#8CACD9</color>
+    <color name="themeAccent">#FEE18B</color>
+</resources>

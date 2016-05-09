@@ -18,7 +18,8 @@ import java.util.Random;
 /**
  * Created by chrisetheridge on 5/8/16.
  *
- * Main activity of the app. Controls the running of the game.
+ * Main activity of the app.
+ * Controls the running of the game.
  */
 public class GameActivity extends AppCompatActivity {
 
@@ -31,8 +32,11 @@ public class GameActivity extends AppCompatActivity {
     private final int MAXIMUM_BUTTON_SIZE = 500;
     private final int POS_X_CUT_OFF = 300;
     private final int POS_Y_CUT_OFF = 500;
+    // seed for randomizing a blue button
     private final int SEED_MAX = 5;
+    // default blue color
     private final int BLUE_COLOR_ARGB = Color.argb(255, 81, 131, 198);
+    // delay between adding and removing a button
     private final int ADD_BUTTON_DELAY = 800;
     private final int REMOVE_BUTTON_DELAY = 1200;
 
@@ -97,7 +101,6 @@ public class GameActivity extends AppCompatActivity {
 
                 // remove that view
                 // TODO: brittle code! we aren't actually checking if we are removing a button
-                //
                 GAME_LAYOUT.removeViewAt(r);
             }
 

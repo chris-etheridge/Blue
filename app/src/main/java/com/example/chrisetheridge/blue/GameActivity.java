@@ -154,7 +154,6 @@ public class GameActivity extends AppCompatActivity {
         gameOver(this);
     }
 
-
     // PRIVATE METHODS
 
     // sets up the game
@@ -170,6 +169,9 @@ public class GameActivity extends AppCompatActivity {
 
         // swap the start button text
         GAME_START_BUTTON.setText("retry");
+
+        // set score to zero
+        GAME_SCORE = 0;
     }
 
     // stops the game
@@ -201,9 +203,6 @@ public class GameActivity extends AppCompatActivity {
     private void clearGame(Context ctx) {
         // remove all buttons
         GAME_LAYOUT.removeAllViewsInLayout();
-
-        // set score to zero
-        GAME_SCORE = 0;
     }
 
     // generates a random button with a random color and random size

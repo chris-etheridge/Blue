@@ -2,7 +2,7 @@
     <string name="app_name">blue</string>
     <string name="app_desc">a simple game of colors</string>
     <string name="game_help_desc">Tap the blue blocks!</string>
-    <string name="game_score_pre">your score is %1$</string>
+    <string name="game_score_pre">your score is </string>
     <string name="game_new_toast">Game started!</string>
     <string name="game_over_toast">Game over!</string>
     <string name="app_about">blue is a simple game about colors. all you need to do is tap the blue button, and ignore all the other buttons! the game is over when you tap a button that is not blue.</string>

@@ -3,6 +3,7 @@ package com.example.chrisetheridge.blue;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -18,7 +19,6 @@ public class GameOverActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         setContentView(R.layout.game_over_activity);
 
         // get our bundle extras
@@ -30,16 +30,11 @@ public class GameOverActivity extends Activity {
             // pull out the score
             int v = extras.getInt("EXTRA_PLAYER_SCORE");
 
-            // ensure the score is greater or equal 0
-            if(v > 0) {
-                GAME_SCORE = v;
-            } else {
-                GAME_SCORE = v;
-            }
-
             // set the text of the score field
-            tv.setText("your final score is " + GAME_SCORE);
+            tv.setText("your final score is " + v);
         }
+
+        super.onCreate(savedInstanceState);
     }
 
     // handle the play again button tap

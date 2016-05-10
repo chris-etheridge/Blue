@@ -5,6 +5,8 @@
 
 Blue is a dead-simple game that requires a good eye and speed. All the player needs to do is tap the BLUE buttons, and none of the other ones.
 
+This is for a college assignment.
+
 
 ### License
 

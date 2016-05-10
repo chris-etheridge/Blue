@@ -1,5 +1,4 @@
-#  Blue
-### A simple game of colors
+#  Blue: a simple game of colors
 
 
 ### What is Blue?
